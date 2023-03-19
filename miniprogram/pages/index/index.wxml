@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="title">快速了解云开发</view>
+
+  <view class="top_tip">免鉴权接口调用 免部署后台 高并发</view>
+  <view class="page-body">
+    <view class="btn-area" id="buttonContainer">
+      <button bindtap="onClick" type="default" plain="true">发起请求</button>
+      <!--<button type="default" plain="true">开始检测</button>-->
+    </view>
+    <view wx:if="{{ has_rsp }}"> 
+      <text> {{ rsp_text }} </text>
+    </view>
+  </view>
+</view>
