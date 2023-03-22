@@ -7,28 +7,28 @@ Page({
     has_rsp: false,
     rsp_text: "null"
   },
-  onClick() {
+
+  questionForm: function(e) {
+    var that = this
+    const question = e.detail.value.question//.question // 获取输入框输入的文本值
+    console.log('输入框输入的文本值：', question)
+    // TODO：接下来可以对 inputValue 进行处理或保存
     wx.cloud.callFunction(
       {
         name: "httpcall",
         //data: {"url": "https://www.baidu.com"},
-        data: {"url": "http://crossentropy.asia:12321/test"},
+        //data: {"url": "http://crossentropy.asia:12321/test"},
+        data: {"url": "http://crossentropy.asia:12321/question", "question": question},
         success(res) {
-          console.log("aaa")
+          console.log('aaa', res)
           var result_text = res["result"]
+          console.log("result_text", result_text)
           if (result_text.length > 0) {
-            console.log("got msg")
-            this.setData(
-              {
-                has_rsp: true,
-                rsp_text: result_text
-              }
-            )
+            that.setData({has_rsp: true, rsp_text: result_text})
           }
-          console.log(res)
         },
         fail(e) {
-          console.log("fail")
+          console.log("get response fail")
         }
     })
   }

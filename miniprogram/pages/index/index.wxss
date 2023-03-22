@@ -92,3 +92,52 @@ page {
   font-size: 24rpx;
   margin-top: 25%;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.picture {
+  width: 200rpx;
+  height: 200rpx;
+  margin-bottom: 20rpx;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+}
+.input-box {
+  width: 80%;
+  height: 60rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 8rpx;
+  padding: 10rpx;
+}
+.submit-button {
+  width: 80%;
+  height: 80rpx;
+  background-color: #007AFF;
+  color: #fff;
+  border-radius: 8rpx;
+  margin-top: 20rpx;
+}
+
+.button {
+  background-color: hsl(0, 80%, 47%); /* 默认背景颜色 */
+  border: 1px solid #ccc; /* 默认边框 */
+  border-radius: 4px; /* 圆角 */
+  width: 80%;
+  height: 80rpx;
+  color: #333; /* 默认文本颜色 */
+  font-size: 14px; /* 字号 */
+  padding: 10px 20px; /* 内边距 */
+  cursor: pointer; /* 鼠标悬停形态 */
+}
+
+.button:active {
+  background-color: #ccc; /* 按下背景颜色 */
+  border-color: #999; /* 按下边框颜色 */
+  color: #fff; /* 按下文本颜色 */
+}
