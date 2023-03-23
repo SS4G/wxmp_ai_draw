@@ -8,6 +8,13 @@ Page({
     rsp_text: "null"
   },
 
+  toChatRoom: function(e) {
+    console.log("toChatRoom")
+    wx.navigateTo({
+      url: '../chatroomPage/chatroom'//实际路径要写全
+    })
+  },
+
   questionForm: function(e) {
     var that = this
     const question = e.detail.value.question//.question // 获取输入框输入的文本值

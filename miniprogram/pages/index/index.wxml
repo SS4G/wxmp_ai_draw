@@ -6,6 +6,7 @@
     <input class="input" type="text" name="question" auto-focus='true'/>
     <button class="btn" formType="submit">提交</button>
   </form>
+  <button class="btn" bindtap="toChatRoom">进入聊天室</button>
   <view class="answer" wx:if="{{ has_rsp }}"> 
     <textarea class="result" placeholder="输出结果"> {{ rsp_text }} </textarea>
   </view>

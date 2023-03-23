@@ -1,0 +1,10 @@
+
+<mp-toptips msg="{{errMsg}}" type="error" show="{{errMsg}}"></mp-toptips>
+<chat-box roomId="11"></chat-box>
+
+<view class="cu-bar foot input {{InputBottom!=0?'cur':''}}" style="bottom:{{InputBottom}}px">
+  <input class="solid-bottom" bindfocus="InputFocus" bindblur="InputBlur" model:value="{{content}}"
+    adjust-position="{{false}}" focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
+  <button class="cu-btn bg-green shadow" bindtap="submit">发送</button>
+</view>
+
