@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/chat",
     "pages/chatroom/chatroom"
   ],
   "window": {
