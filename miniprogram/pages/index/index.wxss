@@ -99,9 +99,33 @@ page {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url(https://6d69-mini-program1-6gs2uj9nf2b87c9e-1302984141.tcb.qcloud.la/chatgpt_imgs/cover222.png?sign=2165798dee68e1a2ad7969771a6be215&t=1679669833);
+  background-image: url(https://6770-gpt-cloud-4g0i66ey01a69ba4-1305001435.tcb.qcloud.la/gpt-icons/background.png?sign=fbd0d82395a6006901ffe75d83851d0c&t=1679811335);
   background-position: 0% 0%;
-  background-size: cover;   
+  background-size: cover;  
+}
+
+.test-bg{
+  width: 100%;
+  height: 100%;
+  background-color: #70c7da;
+}
+.headlogo-image{
+  /*position: 0 0;*/
+  display: block;
+  justify-content: center;  
+  align-items:center;    
+  size: cover;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.cover-text {
+    /*border: 2rpx rgb(250, 250, 250) solid;
+    width: 400rpx;
+    height: 200rpx;*/
+    text-align: center;
+    line-height: 200rpx;
+    color: #f50707;
+    font-size: large;
 }
 
 .picture {

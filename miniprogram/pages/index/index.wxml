@@ -5,8 +5,11 @@
   <!--  <input class="input" type="text" name="question" auto-focus='true'/>-->
   <!--  <button class="btn" formType="submit">提交</button>-->
   <!--</form>-->
-  <button class="cover-btn bg-blue shadow" bindtap="toChatRoom">开始和ChatGpt对话
+  <image mode="aspectFit" src="../../imgs/cover-logo.jpeg" class="headlogo-image"></image>
+  <button class="cover-btn bg-blue shadow" bindtap="toChatRoom">开始提问
   </button>
+  <text class="cover-text"> 使用最新API构建</text>
+
   <!--<view class="answer" wx:if="{{ has_rsp }}">-->
   <!--  <textarea class="result" placeholder="输出结果"> {{ rsp_text }} </textarea>-->
   <!-- </view>-->

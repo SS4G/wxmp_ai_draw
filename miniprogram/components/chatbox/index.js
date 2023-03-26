@@ -99,14 +99,20 @@ const cx = Component({
           {
             "type":"man",
             "avatarUrl":"https://6d69-mini-program1-6gs2uj9nf2b87c9e-1302984141.tcb.qcloud.la/chatgpt_imgs/human.jpg?sign=a562c57bd56f4569719f22a5c428f280&t=1679671246",   
-            "content":"你好 chatGpt",
+            "content":"你好 智能助手",
             "index": 0
           },
           {
             "type":"robot",
             "avatarUrl":"https://6d69-mini-program1-6gs2uj9nf2b87c9e-1302984141.tcb.qcloud.la/chatgpt_imgs/gptavtar.png?sign=6dfe4caccddf280f3288a1169516a267&t=1679670708",
-            "content":"我是 chatGpt",
+            "content":"我是智能助手 为了保证准确度 每条回答大约需要10秒生成 复杂问题需要更久的时间请耐心等待",
             "index": 1
+          },
+          {
+            "type":"robot",
+            "avatarUrl":"https://6d69-mini-program1-6gs2uj9nf2b87c9e-1302984141.tcb.qcloud.la/chatgpt_imgs/gptavtar.png?sign=6dfe4caccddf280f3288a1169516a267&t=1679670708",
+            "content":"复杂问题回答内容较长, 可能需要更久的时间, 请耐心等待",
+            "index": 2
           }
         ]
       })
