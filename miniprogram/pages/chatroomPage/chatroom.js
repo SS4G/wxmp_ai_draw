@@ -1,6 +1,6 @@
 // 获取全局APP
 const app = getApp();
-const botAvatar = "https://6d69-mini-program1-6gs2uj9nf2b87c9e-1302984141.tcb.qcloud.la/chatgpt_imgs/gptavtar.png?sign=6dfe4caccddf280f3288a1169516a267&t=1679670708"
+const botAvatar = "https://6770-gpt-cloud-4g0i66ey01a69ba4-1305001435.tcb.qcloud.la/gpt-icons/cover-logo.jpeg?sign=c10df2c954ce605614c2bbfac34f564d&t=1679826088"
 const humanAvatar = "https://6d69-mini-program1-6gs2uj9nf2b87c9e-1302984141.tcb.qcloud.la/chatgpt_imgs/human.jpg?sign=a562c57bd56f4569719f22a5c428f280&t=1679671246"
 // 获取计时器函数
 Page({

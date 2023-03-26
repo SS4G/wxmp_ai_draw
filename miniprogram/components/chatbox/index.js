@@ -104,13 +104,13 @@ const cx = Component({
           },
           {
             "type":"robot",
-            "avatarUrl":"https://6d69-mini-program1-6gs2uj9nf2b87c9e-1302984141.tcb.qcloud.la/chatgpt_imgs/gptavtar.png?sign=6dfe4caccddf280f3288a1169516a267&t=1679670708",
+            "avatarUrl":"https://6770-gpt-cloud-4g0i66ey01a69ba4-1305001435.tcb.qcloud.la/gpt-icons/cover-logo.jpeg?sign=c10df2c954ce605614c2bbfac34f564d&t=1679826088",
             "content":"我是智能助手 为了保证准确度 每条回答大约需要10秒生成 复杂问题需要更久的时间请耐心等待",
             "index": 1
           },
           {
             "type":"robot",
-            "avatarUrl":"https://6d69-mini-program1-6gs2uj9nf2b87c9e-1302984141.tcb.qcloud.la/chatgpt_imgs/gptavtar.png?sign=6dfe4caccddf280f3288a1169516a267&t=1679670708",
+            "avatarUrl":"https://6770-gpt-cloud-4g0i66ey01a69ba4-1305001435.tcb.qcloud.la/gpt-icons/cover-logo.jpeg?sign=c10df2c954ce605614c2bbfac34f564d&t=1679826088",
             "content":"复杂问题回答内容较长, 可能需要更久的时间, 请耐心等待",
             "index": 2
           }
