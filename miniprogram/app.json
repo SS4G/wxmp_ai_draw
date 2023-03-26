@@ -1,13 +1,20 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/chatroom/chatroom"
+    "pages/chatroomPage/chatroom"
   ],
+  "usingComponents": {
+    "chat-box":"components/chatbox/index",
+    "mp-actionSheet": "weui-miniprogram/actionsheet/actionsheet"
+  },
+  "useExtendedLib": {
+    "weui":true
+  },
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "ChatGPT 001",
     "navigationBarTextStyle": "black"
   },
   "style": "v2"

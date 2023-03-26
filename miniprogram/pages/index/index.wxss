@@ -93,13 +93,17 @@ page {
   margin-top: 25%;
 }
 
-.container {
+.index-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-image: url(https://6d69-mini-program1-6gs2uj9nf2b87c9e-1302984141.tcb.qcloud.la/chatgpt_imgs/cover222.png?sign=2165798dee68e1a2ad7969771a6be215&t=1679669833);
+  background-position: 0% 0%;
+  background-size: cover;   
 }
+
 .picture {
   width: 200rpx;
   height: 200rpx;
@@ -204,4 +208,23 @@ page {
   border: none;
   border-radius: 5px;
   resize: none;
+}
+
+.cover-btn {
+	position: 0 100rpx;
+	border: 3rpx;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 0 30rpx;
+	font-size: 32rpx;
+	height: 100rpx;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none;
+	overflow: visible;
+	margin-left: initial;
+	transform: translate(0rpx, 0rpx);
+	margin-right: initial;
 }

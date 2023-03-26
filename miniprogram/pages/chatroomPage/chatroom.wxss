@@ -2,6 +2,7 @@
   background-color: gray;
   background: ghostwhite;
 }
+
 movable-area {
   position: fixed;
   left: 0;
@@ -49,6 +50,28 @@ movable-view view {
 movable-view image {
   width: 100%;
   height: 100%;
+}
+
+.send-btn {
+	position: relative;
+  border: 2rpx;
+  height: 2%;
+  width: 2%;
+	/* display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 0 30rpx;
+	font-size: 32rpx;
+  height: 100rpx;
+  width: 20%;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none;
+	overflow: visible;
+	margin-left: initial;
+	transform: translate(0rpx, 0rpx);
+	margin-right: initial;*/
 }
 
 .bbbug_player {
@@ -633,3 +656,4 @@ movable-view image {
   background-color: #666;
   color: white;
 }
+

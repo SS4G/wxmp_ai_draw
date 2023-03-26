@@ -92,19 +92,21 @@ const cx = Component({
     initMessageHistory() {
       //初始化消息历史
       var that = this;
-app.globalData.cht = that
+      app.globalData.cht = that
 
       that.setData({
         chatList: [
           {
             "type":"man",
-            "avatarUrl":"",   
+            "avatarUrl":"https://6d69-mini-program1-6gs2uj9nf2b87c9e-1302984141.tcb.qcloud.la/chatgpt_imgs/human.jpg?sign=a562c57bd56f4569719f22a5c428f280&t=1679671246",   
             "content":"你好 chatGpt",
+            "index": 0
           },
           {
             "type":"robot",
-            "avatarUrl":"../../pages/image/openai-avatar.png",
+            "avatarUrl":"https://6d69-mini-program1-6gs2uj9nf2b87c9e-1302984141.tcb.qcloud.la/chatgpt_imgs/gptavtar.png?sign=6dfe4caccddf280f3288a1169516a267&t=1679670708",
             "content":"我是 chatGpt",
+            "index": 1
           }
         ]
       })

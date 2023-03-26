@@ -1,13 +1,14 @@
 <!--index.wxml-->
-
-<view class="container">
-  <image class="header-img" src="https://pic2.zhimg.com/v2-fdc4a1695e53c0bd9e08f6fc8cd559ed_b.jpg"></image>
-  <form bindsubmit='questionForm' class="form">
-    <input class="input" type="text" name="question" auto-focus='true'/>
-    <button class="btn" formType="submit">提交</button>
-  </form>
-  <button class="btn" bindtap="toChatRoom">进入聊天室</button>
-  <view class="answer" wx:if="{{ has_rsp }}"> 
-    <textarea class="result" placeholder="输出结果"> {{ rsp_text }} </textarea>
-  </view>
+<view class="index-page">
+  <!--<image class="header-img" src="https://pic2.zhimg.com/v2-fdc4a1695e53c0bd9e08f6fc8cd559ed_b.jpg"></image>-->
+  <!--<form bindsubmit='questionForm' class="form">-->
+  <!--  <input class="input" type="text" name="question" auto-focus='true'/>-->
+  <!--  <button class="btn" formType="submit">提交</button>-->
+  <!--</form>-->
+  <button class="cover-btn bg-blue shadow" bindtap="toChatRoom">开始和ChatGpt对话
+  </button>
+  <!--<view class="answer" wx:if="{{ has_rsp }}">-->
+  <!--  <textarea class="result" placeholder="输出结果"> {{ rsp_text }} </textarea>-->
+  <!-- </view>-->
 </view>
+<!--style="background-image: url('../../imgs/cover111.png')"-->

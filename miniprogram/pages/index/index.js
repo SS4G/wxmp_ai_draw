@@ -10,6 +10,17 @@ Page({
 
   toChatRoom: function(e) {
     console.log("toChatRoom")
+    /*wx.cloud.callFunction(
+    {
+        name: "simple_test",
+        data: {"a": 1, "b": 2},
+        success(res) {
+          console.log("result_text", res)
+        },
+        fail(e) {
+          console.log("error", e)
+        }
+    })*/
     wx.navigateTo({
       url: '../chatroomPage/chatroom'//实际路径要写全
     })
@@ -27,7 +38,6 @@ Page({
         //data: {"url": "http://crossentropy.asia:12321/test"},
         data: {"url": "http://crossentropy.asia:12321/question", "question": question},
         success(res) {
-          console.log('aaa', res)
           var result_text = res["result"]
           console.log("result_text", result_text)
           if (result_text.length > 0) {
@@ -35,7 +45,8 @@ Page({
           }
         },
         fail(e) {
-          console.log("get response fail")
+          console.log(e)
+          console.log("get response fail", e)
         }
     })
   }
