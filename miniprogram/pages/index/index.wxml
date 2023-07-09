@@ -1,10 +1,14 @@
 <!--index.wxml-->
 <view>
-  <i-icon type="activity" size="28" color="#80848f" />
-  <i-panel title="无标题输入框">
-    <i-input value="{{ promote }}" title="描述" type="textarea" placeholder="请输入描述" bind:change="handleChange" />
-  </i-panel>
-  <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button>
-  <image wx:if="{{ has_rsp }}" src="{{ rsp_image_url }}" size="large"></image>
+  <view >
+    <image  src="{{ rsp_image_url }}" size="large"></image>
+    <!--<image src="../../imgs/Midjourney_Emblem.png" size="small"></image>-->
+    <i-panel title="无标题输入框" style="display: flex; justify-content: center;">
+      <i-input value="{{ promote }}" title="" type="textarea" placeholder="输入描述" bind:change="handleChange" />
+    </i-panel>
+    <!--<i-button type="primary" bind:click="handleClick">这是一个按钮</i-button>-->
+    <l-button style="display: flex; justify-content: center;" type="default" plain="true" bindtap="handleClick" loading="{{ img_loading }}">画一下</l-button>
+    <!--<l-button type="default" plain="true" bindtap="saveImageClick">保存图片</l-button>-->
+  </view>
   <!--<i-avatar wx:if="true" src="{{ rsp_image_url }}" size="large"></i-avatar>-->
 </view>
