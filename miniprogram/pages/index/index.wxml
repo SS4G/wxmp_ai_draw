@@ -1,17 +1,10 @@
 <!--index.wxml-->
-<view class="index-page">
-  <!--<image class="header-img" src="https://pic2.zhimg.com/v2-fdc4a1695e53c0bd9e08f6fc8cd559ed_b.jpg"></image>-->
-  <!--<form bindsubmit='questionForm' class="form">-->
-  <!--  <input class="input" type="text" name="question" auto-focus='true'/>-->
-  <!--  <button class="btn" formType="submit">提交</button>-->
-  <!--</form>-->
-  <image mode="aspectFit" src="../../imgs/cover-logo.jpeg" class="headlogo-image"></image>
-  <button class="cover-btn bg-blue shadow" bindtap="toChatRoom">开始提问
-  </button>
-  <text class="cover-text"> 使用最新API构建</text>
-
-  <!--<view class="answer" wx:if="{{ has_rsp }}">-->
-  <!--  <textarea class="result" placeholder="输出结果"> {{ rsp_text }} </textarea>-->
-  <!-- </view>-->
+<view>
+  <i-icon type="activity" size="28" color="#80848f" />
+  <i-panel title="无标题输入框">
+    <i-input value="{{ promote }}" title="描述" type="textarea" placeholder="请输入描述" bind:change="handleChange" />
+  </i-panel>
+  <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button>
+  <image wx:if="{{ has_rsp }}" src="{{ rsp_image_url }}" size="large"></image>
+  <!--<i-avatar wx:if="true" src="{{ rsp_image_url }}" size="large"></i-avatar>-->
 </view>
-<!--style="background-image: url('../../imgs/cover111.png')"-->

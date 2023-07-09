@@ -1,11 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/chatroomPage/chatroom"
+    "pages/index/index"
   ],
   "usingComponents": {
-    "chat-box":"components/chatbox/index",
-    "mp-actionSheet": "weui-miniprogram/actionsheet/actionsheet"
   },
   "useExtendedLib": {
     "weui":true
@@ -16,6 +13,5 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "智能助手",
     "navigationBarTextStyle": "black"
-  },
-  "style": "v2"
+  }
 }

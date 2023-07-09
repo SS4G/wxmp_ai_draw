@@ -23,12 +23,12 @@ exports.main = async (event, context) => {
 exports.main = async (event, context) => {
   const wxContext = cloud.getWXContext()
   let url = event.url//let 是啥?
-  let question_text = event.question
+  let promote = event.promote
   var options = {
     method: 'POST',
-    uri: url, //'http://crossentropy.asia:12321/question',
+    uri: url, 
     formData: {
-        question: question_text,
+        promote: promote,
     },
     headers: {
       // 注意务必使用这个header
@@ -37,6 +37,7 @@ exports.main = async (event, context) => {
   };
   return await rp(options)
   .then(function (rsp) {
+    console.log("rsp", rsp)
     return rsp
   })
   .catch(function (err) {
