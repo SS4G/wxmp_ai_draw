@@ -2,6 +2,8 @@
 // const app = getApp()
 const { envList } = require('../../envList.js');
 const DEFAULT_IMAGE_URL = "../../imgs/Midjourney_Emblem.png"
+import Toast from '@vant/weapp/toast/toast';
+
 function saveImage(imgUrl) {
   wx.downloadFile({
     url: imgUrl, //图片地址
@@ -39,6 +41,7 @@ Page({
     rsp_image_url: DEFAULT_IMAGE_URL //../../imgs/waiting.gif "../../imgs/waiting.gif"
   },
 
+
   onShareTimeline: function (options) {
     var that = this;
     // 设置菜单中的转发按钮触发转发事件时的转发内容
@@ -64,7 +67,7 @@ Page({
   },
   handleChange: function (e) {
     //console.log("changed", e.detail.detail.value)
-    var total_text = e.detail.detail.value
+    var total_text = e.detail
     console.log("total_text", total_text)
     this.setData({
       promote: total_text

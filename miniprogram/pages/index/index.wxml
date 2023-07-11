@@ -1,14 +1,24 @@
 <!--index.wxml-->
-<view>
-  <view >
-    <image  src="{{ rsp_image_url }}" size="large"></image>
-    <!--<image src="../../imgs/Midjourney_Emblem.png" size="small"></image>-->
-    <i-panel title="无标题输入框" style="display: flex; justify-content: center;">
-      <i-input value="{{ promote }}" title="" type="textarea" placeholder="输入描述" bind:change="handleChange" />
-    </i-panel>
-    <!--<i-button type="primary" bind:click="handleClick">这是一个按钮</i-button>-->
-    <l-button style="display: flex; justify-content: center;" type="default" plain="true" bindtap="handleClick" loading="{{ img_loading }}">画一下</l-button>
-    <!--<l-button type="default" plain="true" bindtap="saveImageClick">保存图片</l-button>-->
+<!--http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html-->
+<!--https://vant-contrib.gitee.io/vant-weapp/#/field-->
+<view id="main">
+  <view id="img_cover" class="row_view">
+    <view>
+      <image id="draw_img" mode="aspectFit" src="{{ rsp_image_url }}"></image>
+    </view>
   </view>
-  <!--<i-avatar wx:if="true" src="{{ rsp_image_url }}" size="large"></i-avatar>-->
+  <!--图片比例-->
+  <!--<view id="img_proportion" class="row_view">
+    <van-picker columns="{{ columns }}" bind:change="onChange" ></van-picker>
+  </view>--->
+  <!--参考图片-->
+  <view id="img_desc" class="van-hairline--surround">
+    <!--<input class="weui-input" auto-focus placeholder="输入想画的内容" value="{{ promote }}"  bind:change="handleChange"/>-->
+    <van-field custom-style="background-color: rgba(243, 243, 243, 0.938);" value="{{ promote }}" placeholder="输入想画的内容" size="large" bind:change="handleChange" />
+  </view>
+  <view id="img_refer" class="row_view">
+    <van-button wx:if="{{ !img_loading }}" plain hairline type="info" bindtap="handleClick">画图</van-button>
+    <van-button wx:else loading type="info" loading-text="加载中..." />
+    <van-button plain hairline type="info" bindtap="saveImageClick">保存</van-button>
+  </view>
 </view>
